@@ -1,5 +1,6 @@
 <?php
 global $application;
+$envCode = $application->getEnvCode();
 $prodSiteDomain = $application->getProdSiteDomain();
 $isLogined = $_REQUEST['App__isLogined'];
 $loginedMemberId = $_REQUEST['App__loginedMemberId'];
@@ -25,6 +26,18 @@ $loginedMember = $_REQUEST['App__loginedMember'];
   <link href="https://cdn.jsdelivr.net/npm/daisyui@1.3.2/dist/full.css" rel="stylesheet" type="text/css" />
 
   <link rel="stylesheet" href="/resource/common.css">
+
+  <?php if ( $envCode == 'prod' ) { ?>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DL3EPB6BMB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DL3EPB6BMB');
+  </script>
+  <?php }?>
 
 </head>
 <body>
