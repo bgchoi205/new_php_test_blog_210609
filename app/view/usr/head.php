@@ -91,12 +91,12 @@ $loginedMember = $_REQUEST['App__loginedMember'];
 
 </head>
 <body>
-  <div class="site-wrap min-h-screen flex flex-col">
-    <header class="top-bar bg-black text-white h-10">
+  <div class="site-wrap min-h-screen flex flex-col pt-10">
+    <header class="top-bar fixed top-0 inset-x-0 bg-indigo-900 text-white h-10">
       <div class="container mx-auto h-full flex">
         <a href="/" class="top-bar__logo px-5 flex items-center">
-          <span><i class="fas fa-lemon"></i></span>
-          <span class="ml-2 font-bold hidden sm:inline">LEMON BLOG</span>
+          <span><i class="fas fa-laptop-code"></i></span>
+          <span class="ml-2 font-bold hidden sm:inline">CBG BLOG</span>
         </a>
 
         <div class="flex-grow"></div>
@@ -110,7 +110,7 @@ $loginedMember = $_REQUEST['App__loginedMember'];
               </a>
             </li>
             <li class="hover:bg-white hover:text-black">
-              <a href="/usr/home/aboutMe" class="h-full flex items-center px-5">
+              <a href="/usr/article/aboutme" class="h-full flex items-center px-5">
                 <span><i class="far fa-id-card"></i></span>
                 <span class="ml-2 font-bold hidden sm:inline">ABOUT ME</span>
               </a>

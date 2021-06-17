@@ -7,6 +7,10 @@ class APP__UsrArticleController {
     $this->articleService = $App__articleService;
   }
 
+  public function actionShowAboutme() {
+    require_once App__getViewPath("usr/article/aboutme");
+  }
+
   public function actionShowWrite() {
     require_once App__getViewPath("usr/article/write");
   }
