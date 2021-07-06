@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* 롯데마트드림 폰트 */
+/* 폰트 적용 */
 @font-face {
   font-family: 'LotteMartDream';
   font-style: normal;
@@ -20,26 +20,14 @@
   src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff') format('woff');
 }
 
-/* 닉스곤폰트M */
-@font-face {
-  font-family: 'NIXGONM-Vb';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
 html > body, html > body .tui-editor-contents {
-  font-family: 'NIXGONM-Vb';
+ font-family: 'LotteMartDream', sans-serif;
 }
 
 .con-pad {
   padding:0 1rem;
 }
 
-.top-bar{
-  position:fixed;
-}
-
-.bg-darkcyan{
-  background-color: darkcyan;
+.top-bar {
+  position: fixed;
 }
