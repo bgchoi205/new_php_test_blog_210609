@@ -34,5 +34,9 @@ html > body, html > body .tui-editor-contents {
 }
 
 .top-bar, .bottom-bar {
-  background-color: #003399;
+  background-color: #204969;
+}
+
+.top-bar .menu-box-1 > ul > li:hover{
+ color:#204969;
 }
