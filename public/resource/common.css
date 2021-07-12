@@ -30,4 +30,9 @@ html > body, html > body .tui-editor-contents {
 
 .top-bar {
   position: fixed;
+  z-index:100;
+}
+
+.top-bar, .bottom-bar {
+  background-color: #003399;
 }

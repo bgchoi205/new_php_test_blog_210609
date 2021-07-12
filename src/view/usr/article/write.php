@@ -40,18 +40,24 @@ $pageTitle = "게시물 작성";
       </script>
       <form action="doWrite" method="POST" onsubmit="ArticleDoWrite__submitForm(this); return false;">
         <input type="hidden" name="body">
-        <div>
-          <span>제목</span>
-          <input placeholder="제목을 입력해주세요." type="text" name="title"> 
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text">제목</span>
+          </label> 
+          <input type="text" placeholder="제목을 입력해주세요." class="input input-bordered" name="title">
         </div>
-        <div>
-          <span>내용</span>
-
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text">내용</span>
+          </label>
           <script type="text/x-template"></script>
           <div class="toast-ui-editor input-body"></div>
         </div>
         <div>
-          <input type="submit" value="글작성">
+          <div class="btns">
+						<button type="submit" class="btn btn-link">작성</button>
+						<button onclick="history.back();" type="button" class="btn btn-link">작성취소</button>
+					</div>
         </div>
       </form>
     </div>

@@ -25,7 +25,9 @@ if ( !isset($meta['og:title']) ) {
 
 $meta['siteDomain'] = $prodSiteDomain;
 $meta['siteMainUrl'] = "https://{$prodSiteDomain}";
-$meta['siteMetaImgUrl'] = "/resource/img/logo/logo_meta.png";
+if ( !isset($meta['siteMetaImgUrl']) ) {
+  $meta['siteMetaImgUrl'] = "/resource/img/logo/logo_meta.png";
+}
 ?>
 
 <meta name="apple-mobile-web-app-title" content="<?=$meta['siteName']?>" />
